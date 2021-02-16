@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer equipment warehouse</title>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"/>
+</head>
+    <body>
+        <ion-header>
+            <ion-toolbar>
+              <ion-title>Сategory of products</ion-title>
+            </ion-toolbar>
+        </ion-header>
+        <section id="main">
+            <ion-grid>
+                <ion-row>
+                  <ion-col size="12" size-md="6" offset-md="3">
+                    <ion-button color="secondary" size="large">
+                        <ion-icon name="add-circle-outline"></ion-icon>
+                    </ion-button>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col size="12" size-md="6" offset-md="3">
+                        <ion-list>
+                            <ion-list-header>
+                                <ion-label>Smartphones</ion-label>
+                            </ion-list-header>
+                            <ion-item>
+                                <ion-label>iPhone 12</ion-label>
+                                <ion-button color="danger" size="medium">
+                                    <ion-icon name="trash-outline"></ion-icon>
+                                </ion-button>
+                                <ion-button color="primary" size="medium">
+                                    <ion-icon name="create"></ion-icon>
+                                </ion-button>
+                            </ion-item>
+                        </ion-list>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </section>
+
+        <section id = "edit">
+            <ion-header>
+                <ion-grid>
+                    <ion-row>
+                        <ion-col size="12" size-md="6" offset-md="3">
+                            <ion-item>
+                                <ion-label position="floating">Category</ion-label>
+                                <ion-input id="category"></ion-input>
+                            </ion-item>
+                            <ion-item>
+                                <ion-label position="floating">Model</ion-label>
+                                <ion-input id="model"></ion-input>
+                            </ion-item>
+                        
+                            <ion-button id ="save "color="primary" size="medium" float-right style="margin-top: 20px;">
+                                <ion-icon name="checkmark-outline"></ion-icon>
+                            </ion-button>
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
+            </ion-header>
+        </section>
+    </body>
+</html>
